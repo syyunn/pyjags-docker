@@ -13,7 +13,7 @@ RUN yum install -y \
   findutils \
   python27-devel
 COPY JAGS-4.3.0.tar.gz .
-RUN /bin/tar xf JAGS-4.3.0.tar.gz
+RUN tar xf JAGS-4.3.0.tar.gz
 # compile JAGs
 WORKDIR JAGS-4.3.0/
 RUN F77=gfortran ./configure --libdir=/usr/local/lib64
