@@ -12,7 +12,8 @@ RUN yum install -y \
   gcc-c++ \
   findutils \
   python27-devel \
-  install tar
+  install tar \
+  intall gzip
 COPY JAGS-4.3.0.tar.gz .
 RUN tar xf JAGS-4.3.0.tar.gz
 # compile JAGs
