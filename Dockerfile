@@ -11,7 +11,8 @@ RUN yum install -y \
   lapack-devel \
   gcc-c++ \
   findutils \
-  python27-devel
+  python27-devel \
+  install tar
 COPY JAGS-4.3.0.tar.gz .
 RUN tar xf JAGS-4.3.0.tar.gz
 # compile JAGs
